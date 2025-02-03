@@ -1,0 +1,11 @@
+fetch("trafficLight/chartTrafficLight.html",{
+    method: "get",
+
+})
+    .then(response => response.text())
+    .then(data => document.getElementById("trafficLight").innerHTML = data)
+
+    .catch(error => {
+        console.error();
+        
+    })
